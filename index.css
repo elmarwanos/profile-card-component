@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.big-weight {
+  font-size: 18px;
+  font-family: Kumbh Sans, sans-serif;
+  font-weight: 700;
+}
+
+.small-weight {
+  font-size: 12px;
+  font-family: Kumbh Sans, sans-serif;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+}
+
+html,
+body {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.screen-wrapper {
+  height: 100%;
+  background-color: hsl(185, 75%, 39%);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#top-bubble {
+  position: absolute;
+  right: 50%;
+  bottom: 40%;
+  z-index: 1;
+}
+
+#bottom-bubble {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+}
+
+.card-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 23.438rem;
+  width: 21.875rem;
+  border-radius: 5%;
+  overflow: hidden;
+  z-index: 2;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.main-box {
+  position: relative;
+  height: 75%;
+  width: 100%;
+}
+.main-box-top {
+  height: 50%;
+  width: 100%;
+}
+.main-box-top > object {
+  height: 100%;
+  width: 100%;
+}
+
+#victor-pp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0.3125rem solid white;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.main-box-bottom {
+  height: 50%;
+  border-bottom: thin solid hsl(0, 0%, 59%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  margin-top: 20%;
+  text-align: center;
+  line-height: 30px;
+}
+
+.stats-box {
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.stats-box > div {
+  width: 100%;
+  text-align: center;
+}
+
+.attribution {
+  background-color: hsl(227, 10%, 46%);
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
